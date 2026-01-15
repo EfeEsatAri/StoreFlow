@@ -1,0 +1,16 @@
+﻿@model List<string>
+@{
+	ViewData["Title"] = "CustomerListWithDefaultIfEmpty";
+	Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<h1>Keişim Kümesi Ankara - İstanbul Olan Müşteriler</h1>
+
+<ul>
+	@foreach(var item in Model)
+	{
+		<li>@item</li>
+	}
+</ul>
+
+
